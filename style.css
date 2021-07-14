@@ -36,9 +36,33 @@ li a {
 
 li a:hover {
     color: rgb(250, 69, 175);
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 700;
 }
+
+
+.nav-common-btn {
+    background-color: rgb(250, 69, 175);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    padding: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-common-btn:hover {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(250, 69, 175);
+}
+
+.nav-common-btn:active {
+    outline: none;
+}
+
 
 .burger {
     display: none;
@@ -66,6 +90,19 @@ li a:hover {
     background-size: cover;
     position: relative;
     filter: brightness(50%);
+}
+
+.cv-background-image {
+    background: url("./images/cv-background.jpg");
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(70%);
 }
 
 .hero-text {
