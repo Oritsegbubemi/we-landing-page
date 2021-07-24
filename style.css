@@ -50,6 +50,7 @@ li a:hover {
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .nav-common-btn:hover {

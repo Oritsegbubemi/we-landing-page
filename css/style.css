@@ -36,6 +36,8 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; 
+  text-decoration: none;
+
 }
 a, a:hover {
   text-decoration: none;
@@ -416,7 +418,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   position: relative;
-  margin: 25px 0 50px
+  /* margin: 25px 0 50px */
 }
 
 h3::after {
@@ -430,6 +432,28 @@ h3::after {
   right: 0;
   bottom: -10px
 }
+
+/* h3 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 25px 0 50px
+}
+
+h3::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #ffdc12;
+  left: 0;
+  right: 0;
+  bottom: -10px
+} */
 
 .carousel {
   width: 650px;
