@@ -34,7 +34,7 @@
         $body .= "Good day, Kindly help me review my CV" . $eol;
         $body .= "First name: " . $firstname . ", Last name: " . $lastname . $eol;
         $body .= "Email " . $mailFrom .  ", Phone Number: " . $phonenumber . $eol;
-        $body .= "Content: " . $message . $eol;
+        $body .= "Additionsl Information: " . $message . $eol;
     
         // attachment
         $body .= "--" . $separator . $eol;

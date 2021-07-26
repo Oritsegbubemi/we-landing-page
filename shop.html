@@ -83,7 +83,12 @@
                                         </div>
                                         <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                                             <li><a href="index" class="nav-link">HOME</a></li>
-                                            <li><a href="cv-review" class="nav-link">CV Review</a></li>
+                                            <li class="has-children">
+                                                <a href="cv-revamp" class="nav-link">CV REVAMP</a>
+                                                <ul class="dropdown arrow-top">
+                                                    <li><a href="new-cv-revamp" class="nav-link">Need a New CV?</a></li>
+                                                </ul>
+                                            </li>
                                             <li class="active"><a href="shop" class="nav-link">SHOP</a></li>
                                         </ul>
                                     </div>
@@ -106,7 +111,7 @@
                                 <div class="row">
                                     <div class="col-lg-7 col-12 mt-3">
                                         <div class="hero-text py-5 center">
-                                            <h1><span>UP TO 30% OFF </span>Shirt For Women</h1>
+                                            <h1><span>UP TO 30% OFF </span>Shirts For Women</h1>
                                             <div class="button">
                                                 <a href="#product" class="btn">Shop Now</a>
                                             </div>
@@ -211,7 +216,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product-content">
-                                                        <h3><a href="#">WE Ideal</a></h3>
+                                                        <h3><a href="#">WE Asset</a></h3>
                                                         <div class="product-price">
                                                             <span>&#8358;3,000</span>
                                                         </div>
@@ -519,7 +524,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -527,16 +532,30 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="https://flutterwave.com/pay/womenpreneurse9ec" class="btn">Buy Now</a>
-                                        <a href="" class="btn min"><i class="ti-heart"></i></a>
-                                        <a href="" class="btn min"><i class="fa fa-compress"></i></a>
+                                        <form action="https://checkout.flutterwave.com/v3/hosted/pay" method="post">
+                                            <input type="hidden" name="public_key" value="FLWPUBK-ef90be76973a5032f300dccfdd9c4a2e-X" />
+                                            <input type="hidden" name="customer[email]" value="gbubemimakpokpomi@gmail.com" />
+                                            <input type="hidden" name="customer[phone_number]" value="08104738987" />
+                                            <input type="hidden" name="customer[name]" value="Jesse Pinkman" />
+                                            <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+                                            <input type="hidden" name="amount" value="5" />
+                                            <input type="hidden" name="currency" value="NGN" />
+                                            <input type="hidden" name="meta[token]" value="54" />
+                                            <input type="hidden" name="redirect_url" value="https://womenpreneursng.com/shop/" />
+                                            <a href=""><button type="submit" class="btn" name="submit">Buy Now</button></a>
+                                            <!-- <a href="https://flutterwave.com/pay/womenpreneurse9ec" class="btn">Buy Now</a> -->
+                                            <a href="" class="btn min"><i class="ti-heart"></i></a>
+                                            <a href="" class="btn min"><i class="fa fa-compress"></i></a>
+                                        </form>
+
+                                        
                                     </div>
                                     <div class="default-social">
                                         <h4 class="share-now">Share:</h4>
@@ -574,7 +593,7 @@
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="quickview-content">
-                                    <h2>WE Ideal</h2>
+                                    <h2>WE Asset</h2>
                                     <div class="quickview-ratting-review">
                                         <div class="quickview-ratting-wrap">
                                             <div class="quickview-ratting">
@@ -617,7 +636,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -625,7 +644,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -715,7 +734,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -723,7 +742,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -813,7 +832,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -821,7 +840,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -911,7 +930,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -919,7 +938,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -1008,7 +1027,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -1016,7 +1035,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="diabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -1106,7 +1125,7 @@
                                         <div class="input-group">
                                             <div class="button minus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    data-type="minus" data-field="quant[1]">
                                                     <i class="ti-minus"></i>
                                                 </button>
                                             </div>
@@ -1114,7 +1133,7 @@
                                                 data-max="1000" value="1">
                                             <div class="button plus">
                                                 <button type="button" class="btn btn-primary btn-number"
-                                                    diabled="disabled" data-type="plus" data-field="quant[1]">
+                                                    data-type="plus" data-field="quant[1]">
                                                     <i class="ti-plus"></i>
                                                 </button>
                                             </div>
@@ -1245,16 +1264,19 @@
                 <div class="inner-top">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 col-12">
-                            <!-- Start Newsletter Inner -->
                             <div class="inner">
                                 <h4>Newsletter</h4>
                                 <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-                                <form action="" method="post" target="_blank" class="newsletter-inner">
-                                    <input name="EMAIL" placeholder="Your email address" required="" type="email">
-                                    <button class="btn">Subscribe</button>
-                                </form>
+                                <div>
+                                    <form
+                                        action="https://gmail.us7.list-manage.com/subscribe/post?u=f86c8e95d10b49e505186d210&amp;id=0fcb6149ae"
+                                        method="post" name="mc-embedded-subscribe-form" class="validate newsletter-inner" target="_blank">
+                                        <input class="required email" type="email" name="EMAIL" placeholder="Your email address" required>
+                                        <button class="btn" type="submit" value="Subscribe" name="subscribe"
+                                            id="mc-embedded-subscribe">Subscribe</button>
+                                    </form>
+                                </div>
                             </div>
-                            <!-- End Newsletter Inner -->
                         </div>
                     </div>
                 </div>
@@ -1296,6 +1318,25 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+        <script id="mcjs">
+            ! function (c, h, i, m, p) {
+                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode
+                    .insertBefore(m, p)
+            }(document, "script",
+                "https://chimpstatic.com/mcjs-connected/js/users/f86c8e95d10b49e505186d210/5012aefb2dbdc8f24c4c95f80.js"
+                );
+        </script>
     </body>
 
 </html>
