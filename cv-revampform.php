@@ -1,15 +1,14 @@
 <?php
     if(isset($_POST['submit'])) 
     {
-        
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $mailFrom = $_POST['email'];
         $phonenumber = $_POST['phonenumber'];
         $message = $_POST['comments'];
-        $file=$_FILES["cv"]["name"];
-        // $mailto = "hello@womenpreneursng.com";
-        $mailto = "gbubemimakpokpomi@gmail.com";
+        $file = $_FILES["cv"]["name"];
+        $mailto = "hello@womenpreneursng.com";
+        $subject = "Womenpreneurs CV Revamp";
 
         $content = file_get_contents($file);
         $content = chunk_split(base64_encode($content));
@@ -21,7 +20,7 @@
         $eol = "\r\n";
     
         // main header (multipart mandatory)
-        $headers = "From: name <test@test.com>" . $eol;
+        $headers = "From: name " . $mailFrom . $eol;
         $headers .= "MIME-Version: 1.0" . $eol;
         $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
         $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
@@ -31,10 +30,10 @@
         $body = "--" . $separator . $eol;
         $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
         $body .= "Content-Transfer-Encoding: 8bit" . $eol;
-        $body .= "Good day, Kindly help me review my CV" . $eol;
+        $body .= "Good day, Kindly help me revamp my CV" . $eol;
         $body .= "First name: " . $firstname . ", Last name: " . $lastname . $eol;
         $body .= "Email " . $mailFrom .  ", Phone Number: " . $phonenumber . $eol;
-        $body .= "Additionsl Information: " . $message . $eol;
+        $body .= "Additional Information: " . $message . $eol;
     
         // attachment
         $body .= "--" . $separator . $eol;
@@ -46,7 +45,7 @@
     
         //SEND Mail
         if (mail($mailto, $subject, $body, $headers)) {
-            header("Location: https://flutterwave.com/pay/womenpreneurse9ec");
+            header("Location: https://flutterwave.com/pay/57dabxiftncy");
             exit();
         } else {
             echo "mail send ... ERROR!";
