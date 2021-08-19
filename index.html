@@ -75,7 +75,7 @@
                 </div>
                 <div class="about-col">
                     <img src="./images/about-us3.jpg" alt="">
-                    <p>Creating a platform to link women with investors and provide job opprtunities</p>
+                    <p>Creating a platform to link women with investors and provide job opportunities</p>
                 </div>
             </div>
         </div>
@@ -93,22 +93,49 @@
         </div>
 
 
-        <!--SERVICE SECTION-->
-        <div id="services">
-            <div class="service">
+        <!-- SERVICE SECTION -->
+        <div>
+            <div class="slideshow-container">
+                <div class="service-intro">
                 <h2>What WE Do</h2>
-                <div class="latest-event">
-                    <img src="./images/sheo.jpg" alt="" width="300px" height="300px">
-                    <p>
-                        The SheEO Conference is an annual event where women learn, un-learn and relearn while networking
-                        with one another.
-                        Also, it gives them an opportunity to build, manage and scale their businesses.
-                    </p>
+                <div class="mySlides fade">
+                    <div class="service">
+                        <div class="latest-event">
+                            <img src="./images/services/sheo.jpg" alt="" width="300px" height="300px">
+                            <p>
+                                The SheEO Conference is an annual event where women learn, un-learn and relearn while
+                                networking with one another. Also, it gives them an opportunity to build, manage and scale their businesses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="service">
+                        <div class="latest-event">
+                            <img src="./images/services/wetalk.jpg" alt="" width="300px" height="300px">
+                            <p>
+                                WETalk is a new initiative in form of a monthly webinar series for female entrepreneurs
+                                within and outside Nigeria. The webinar series is focused on helping young female
+                                entrepreneurs Build, Manage and Scale their businesses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
+            <br>
 
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
         </div>
-
+        
 
         <!--TEAM SECTION-->
         <div id="team">
@@ -225,6 +252,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/610f2924d6e7610a49af1dea/1fchjhe6b';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
     </body>
 
 </html>
