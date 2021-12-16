@@ -64,7 +64,8 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-2">
-                                <a href="https://www.womenpreneursng.com/"><img src="images/logo.png" alt="WE Logo" height="30" width="50"></a>
+                                <a href="https://www.womenpreneursng.com/"><img src="images/logo.png" alt="WE Logo"
+                                        height="30" width="50"></a>
                             </div>
                             <div class="col-10">
                                 <nav class="site-navigation text-right" role="navigation">
@@ -75,7 +76,8 @@
                                             </a>
                                         </div>
                                         <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                                            <li><a href="https://www.womenpreneursng.com/" class="nav-link">HOME</a></li>
+                                            <li><a href="https://www.womenpreneursng.com/" class="nav-link">HOME</a>
+                                            </li>
                                             <li class="has-children">
                                                 <a class="active" href="cv-revamp" class="nav-link">CV REVAMP</a>
                                                 <ul class="dropdown arrow-top">
@@ -110,7 +112,7 @@
                             <h6 class="mb-4">
                                 <a class="fw-bold text-warning mt-5 text-bold" href="./cv-create.html">
                                     <strong><em>Hey there, Do you need a new CV?</em></strong>
-                                    </a>
+                                </a>
                             </h6>
                         </div>
                     </p>
@@ -118,6 +120,74 @@
             </div>
 
         </div>
+
+
+        <!-- SERVICE SECTION -->
+        <div>
+            <div class="slideshow-container">
+                <div class="service-intro">
+                    <h2>What WE Do</h2>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial1.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial2.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial3.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial4.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial5.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="service">
+                            <div class="latest-event">
+                                <img src="./images/cv/testimonial6.jpeg" alt="" width="300px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+
 
         <!-- CV FORM -->
         <div class="container py-5" id="form">
@@ -143,7 +213,7 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" id="phonenumber" placeholder="phonenumber" name="phonenumber" 
+                    <input type="tel" class="form-control" id="phonenumber" placeholder="phonenumber" name="phonenumber"
                         required>
                     <label for="phonenumber">Phone Number</label>
                 </div>
@@ -174,11 +244,24 @@
         </div>
 
         <!-- Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="cjs/bootstrap.min.js"></script>
-		<script src="cjs/main.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true,
+            });
+        </script>
+        <script src="./app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
+            integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="cjs/bootstrap.min.js"></script>
+        <script src="cjs/main.js"></script>
 
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
@@ -196,4 +279,5 @@
         </script>
         <!--End of Tawk.to Script-->
     </body>
+
 </html>
